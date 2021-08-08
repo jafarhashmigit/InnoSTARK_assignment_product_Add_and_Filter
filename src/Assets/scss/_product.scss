@@ -1,0 +1,25 @@
+@import "./variables";
+
+.product {
+  color: $light;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  
+}
+.add-product-dialog{
+   color: $light;
+   padding-right: 20px;
+}
+.product-header{
+    .input-filed{
+        margin: 0px !important;
+    }
+}
+.MuiDialog-paperWidthSm{
+    width: 800px !important;
+}
+.form-control{
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}

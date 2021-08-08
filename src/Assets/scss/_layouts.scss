@@ -1,0 +1,18 @@
+@import "./variables";
+
+.layout-wrapper {
+  display: flex;
+  position: relative;
+
+  .main {
+    width: 100%;
+    margin: 0 $spacer;
+    &.play {
+      margin: 0 $spacer;
+    }
+    &.user-profile {
+      margin-left: $spacer;
+    }
+  }
+
+}

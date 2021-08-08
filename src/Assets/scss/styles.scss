@@ -1,0 +1,45 @@
+@import "./variables";
+@import "./layouts";
+@import "./table";
+@import "./input";
+@import "./product";
+
+body * {
+  font-family: $font-titillium !important;
+}
+
+body {
+  // background: rgba($theme-bg-color,.8);
+  background: url(../images/body-bg.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // height: 100vh;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($theme-bg-color, 0.975);
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $theme-bg-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #1d628a;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($color: #1d628a, $amount: 10);
+  }
+}
+
+.layout-wrapper {
+  padding: 1.5rem $spacer;
+}
+
+
